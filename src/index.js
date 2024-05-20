@@ -3,6 +3,12 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import '../node_modules/bootstrap/dist/css/bootstrap.css';
+import '../node_modules/bootstrap-icons/font/bootstrap-icons.css';
+import '../node_modules/jquery/dist/jquery.min.js';
+import '../node_modules/@popperjs/core/dist/cjs/popper.js';
+import '../node_modules/bootstrap/dist/js/bootstrap.js';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

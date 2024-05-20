@@ -1,38 +1,539 @@
-.App {
-  text-align: center;
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+/* Header */
+.Header{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  /* border: 2px solid blue; */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+nav{
+  /* margin: 0; */
+  /* border: 2px solid blue; */
+  height: 80px;
+  /* padding: 10px; */
+  background-color: white;
+  z-index: 1000;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+  /* border: 1px solid red; */
+  
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+
+.navbar-brand i{
+  /* padding: 0px; */
+  /* margin-top: -10px; */
+  /* border: 1px solid green; */
+  font-size: 70px;
+  color: rgb(192, 32, 32);
+}
+
+.logoContent{
+  /* border: 1px solid red; */
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin-bottom: 0;
+  margin-left: -10px;
+  padding: 0;
+}
+ #p1{
+  margin-top: 15px;
+  font-weight: bold;
+}
+#p2{
+  margin-top: -20px;
+  color: rgb(248, 19, 19);
+  font-size: 14px;
+}
+
+#navbarsupportedcontent{
+  /* margin-left: 200px; */
+  /* border: 1px solid red; */
+  /* margin-left: 50px; */
+  justify-content: end;
+  align-items: center;
+
+}
+
+
+/* Footer */
+
+.Footer{
+  /* border: 1px solid red; */
+  margin-top: 10px;
+  padding: 20px;
+  background-color: rgb(105, 104, 104);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.Footer ul{
+  list-style: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.footercontent{
+  /* border: 1px solid red; */
+  padding: 20px;
 }
+#footcont{
+  font-size: 16px;
+  font-style: oblique;
+  color: aliceblue;
+}
+
+.contentlist{
+
+  /* border: 1px solid red; */
+  /* margin-left: 20px; */
+  padding: 20px;
+
+}
+
+.contentlist li{
+  margin-top: 10px;
+  color: white;
+}
+
+.sociallinks{
+  padding: 20px;
+}
+
+.sociallinks li{
+  margin-top: 10px;
+  margin-left: 10px;
+  font-size: 18px;
+}
+
+.sociallinks i{
+  margin-top: 10px;
+  color: red;
+}
+
+.sociallinks h4{
+  color: red;
+  margin-left: 20px;
+}
+
+.Address{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid red; */
+  /* gap:-5px; */
+}
+
+.Address .Addresstitle{
+  color: yellow;
+}
+
+.AddressContent{
+  margin-top: -10px;
+}
+
+/* Home */
+
+.Homebg{
+  background-image: url('../public/Images/Image1.jpg');
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: 80px;
+  height: 700px;
+  background-attachment: fixed;
+  /* border: 2px solid blue; */
+  
+}
+
+.Homeclass{
+  height: 700px;
+  background : linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.7));
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+
+.Homeclass h2{
+  font-size: 60px;
+  color: red;
+}
+
+.Homeclass p{
+  font-size: 20px;
+  color: aqua;
+}
+
+.Homeclass b{
+  color: white;
+}
+
+.ImageLeft img{
+  width: 600px;
+  padding: 30px;
+  margin: 30px;
+  /* border: 1px solid red; */
+}
+
+.CoachingDetails{
+  /* border: 1px solid red; */
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* align-items: center; */
+  /* justify-content: center; */
+  /* text-align: center; */
+  background-color: aliceblue;
+  padding-top: 100px;
+  height: 360px;
+  margin-top: 60px;
+  margin-right: 30px;
+  padding-left: 30px;
+}
+
+.CoachingContent .title{
+  /* padding-left: 30px; */
+  color: red;
+}
+
+a{
+  text-decoration: none !important;
+}
+
+.nav-item{
+  margin-left: 1rem;
+  /* border: 1px solid green; */
+  width: 9rem;
+  text-align: center;
+  
+}
+
+.nav-link{
+  color: black !important;
+}
+
+.nav-link:hover{
+  color: white !important;
+  background-color: red;
+  border-radius: 10px;
+}
+
+
+.nav-link.active{
+  
+  background-color: red;
+  color: white !important;
+  border-radius: 10px;
+  
+
+}
+
+.dropdown{
+  margin-left: -12px;
+  /* width: 80px; */
+}
+
+.dropdown-menu{
+  /* border: 1px solid red !important; */
+  background-color: aliceblue !important;
+  /* margin-left: -500px; */
+  /* width: 300px; */
+}
+
+ .dropdown-item a{
+  color: black !important;
+  /* border: 1px solid red; */
+  width: 100%;
+  display: inline-block;
+  padding: 0.5rem;
+ }
+
+ .dropdown-item a:hover{
+  background-color: red;
+  color: white !important;
+  border-radius: 10px;
+ }
+
+ .dropdown-submenu{
+  display: none;
+ }
+ .dropdown-menu > div:hover > .dropdown-submenu {
+  display: block;
+  }
+
+
+
+.quote{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid red; */
+  background-color: aqua;
+  margin: 20px;
+  padding: 30px;
+  height:200px;
+  color: black;
+}
+
+.quote p{
+  width: 800px;
+  font-size: 25px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#facultytitle{
+  /* display: flex; */
+  text-align: center;
+  color: green;
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  /* border-bottom: 1px solid green; */
+  /* width: 50px; */
+  /* justify-content: center; */
+}
+
+#facultytitle::before{
+  border-bottom: 1px solid green;
+  display: flex;
+  justify-content: center;
+  width: 80px;
+}
+
+.FacultyDetails{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+.card{
+  width: 300px;
+  /* position: static; */
+  
+  margin: 40px;
+  /* border: none; */
+}
+
+.card img{
+  border-radius: 20%;
+  z-index: 10;
+}
+
+.no-border{
+  border: none !important;
+}
+
+
+/* About */
+
+
+.AboutUs{
+  margin-top: 100px;
+}
+
+.AboutTitle{
+  text-align: center;
+  color: red;
+  font-weight: 800;
+  margin: 20px;
+}
+
+.AboutUs .p1{
+  color: green;
+}
+
+.vision{
+  text-align: center;
+  background-color: aliceblue;
+  height: 180px;
+}
+
+.vision h2{
+  padding-top: 20px;
+  font-weight: 700;
+  color: red;
+}
+
+.vision p{
+  padding-top: 15px;
+  font-size: 20px;
+  color: green;
+}
+
+.mission{
+  margin-top: 10px;
+  text-align: center;
+  background-color: aliceblue;
+  height: 180px;
+}
+
+.mission h2{
+  padding-top: 20px;
+  font-weight: 700;
+  color: red;
+}
+
+.mission p{
+  padding-top: 15px;
+  font-size: 20px;
+  color: green;
+}
+
+
+/* Contact */
+
+.Contact{
+  /* box-sizing: border-box; */
+  margin-top: 100px;
+}
+
+.ContactContent{
+  background-color: aliceblue;
+  padding: 30px;
+  color: green;
+}
+
+.ContactDetails{
+  /* border: 1px solid red; */
+  /* margin-top: 500px; */
+  padding-top: 50px;
+}
+
+.AddressDetails{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  /* border-radius: 2px solid blue; */
+}
+
+.AddressDetails i{
+  /* border: 1px solid red; */
+  margin-left: 90px;
+  font-size: 50px;
+  color: green;
+  padding: 10px;
+  background-color: aliceblue;
+  border-radius: 50%;
+}
+
+.AddressDetails a{
+  /* border: 1px solid red; */
+  /* margin-bottom: 400px; */
+  margin-left: -400px;
+}
+
+ .Mail-data{
+  margin-top: 20px;
+ }
+
+
+ /* University */
+
+ .University{
+  margin-top: 100px;
+ }
+
+ .univImage{
+  display: flex;
+  justify-content: space-evenly;
+  /* width: 400px; */
+  /* border: 1px solid red; */
+  /* height: 500px; */
+ }
+
+ .UnivTitle{
+  background-color: aliceblue;
+  text-align: center;
+  color: red;
+  margin-bottom: 1rem;
+  padding: 5px;
+ }
+
+ .univImage img{
+  width: 500px;
+  height: 100%;
+  /* justify-content: space-between; */
+ }
+
+ .AboutCourse{
+  background-color: aliceblue;
+  color: red;
+  margin-top: 2rem;
+  text-align: center;
+  padding: 7px;
+ }
+
+ .InstContact{
+  text-align: center;
+  /* background-color: red !important; */
+  /* color: white !important; */
+ }
+
+
+
+ /* Media queries */
+
+ @media screen and (max-width : 576px){
+  ul{
+    background-color: aliceblue;
+    
+  }
+  .nav-item{
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .navbar{
+    height: 120px;
+  }
+
+  .TrainingDetials{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .ImageLeft{
+    width: 100% !important;
+    /* border: 1px solid red; */
+    
+    padding: 0 !important;
+    margin-left: -20px !important;
+    /* margin: 0 !important; */
+  }
+  .CoDet{
+    /* border: 1px solid red; */
+    width: 100% !important;
+    padding-left: 25px !important;
+    margin: 0px !important;
+  }
+  .CoachingDetails{
+    width: 100% !important;
+    /* border: 1px solid red; */
+    margin: 0px !important;
+  }
+
+  .FooterData{
+    display: flex;
+    flex-direction: column;
+    width: 100% !important;
+  }
+
+  .footercontent{
+    width: 100% !important;
+    padding: 5px !important;
+    text-align: center;
+  }
+
+  .contentlist{
+    width: 100% !important;
+  }
+
+ }
