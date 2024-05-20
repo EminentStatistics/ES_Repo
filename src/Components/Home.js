@@ -14,7 +14,7 @@ export const Home = () => {
             </div>
 
             <div className="row TrainingDetials">
-                <div className="ImageLeft col-6 col-md-12">
+                <div className="ImageLeft col-6 col-xs-12">
                     <img className="img-fluid" src="Images/image2.jpg"></img>
                 </div>
                 <div className="CoDet col-6 col-xs-12">
