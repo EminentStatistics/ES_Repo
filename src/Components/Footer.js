@@ -15,10 +15,10 @@ export const Footer = () =>{
                     <div className="col-4 sociallinks">
                             <h4>Check us Here</h4>
                             <ul>
-                                <li><i class="bi bi-facebook"></i> &nbsp;&nbsp;Facebook</li>
-                                <li><i class="bi bi-instagram"></i> &nbsp;&nbsp;Instagram</li>
-                                <li><i class="bi bi-youtube"></i> &nbsp;&nbsp;Youtube</li>
-                                <li><i class="bi bi-telephone-plus-fill"></i>&nbsp;&nbsp;+91-7272727272</li>
+                                <li><i className="bi bi-facebook"></i> &nbsp;&nbsp;Facebook</li>
+                                <li><i className="bi bi-instagram"></i> &nbsp;&nbsp;Instagram</li>
+                                <li><i className="bi bi-youtube"></i> &nbsp;&nbsp;Youtube</li>
+                                <li><i className="bi bi-telephone-plus-fill"></i>&nbsp;&nbsp;+91-7272727272</li>
                             </ul>
                     </div>
                 </div>

@@ -2,7 +2,7 @@ import { NavLink, Link } from "react-router-dom";
 
 export const Header = () =>{
     return (
-        <div className="Header container-fluid">
+        <div className="Header">
                 <nav className="navbar navbar-expand-lg ">
                     <a className="navbar-brand" href="#"><i className="bi bi-mortarboard"></i></a>
                     {/* <a className="navbar-brand" href="#"><img src="./Images/Logo.jpg"></img></a> */}
