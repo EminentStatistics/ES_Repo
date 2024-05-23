@@ -23,6 +23,7 @@ nav{
   background-color: white;
   z-index: 1000;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+  width: 100%;
   /* border: 1px solid red; */
   
 }
@@ -312,7 +313,6 @@ a{
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  z-index: 10;
 }
 .card{
   width: 300px;
@@ -320,11 +320,11 @@ a{
   
   margin: 40px;
   /* border: none; */
+  z-index: -1;
 }
 
 .card img{
   border-radius: 20%;
-  z-index: 10;
 }
 
 .no-border{

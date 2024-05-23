@@ -2,7 +2,7 @@
 
 export const Home = () => {
     return(
-        <div className="container-fluid">
+        <div>
             <div className="Homebg">
                 <div className="Homeclass">
                     <div className="Homecontent">
@@ -13,23 +13,25 @@ export const Home = () => {
                 </div>
             </div>
 
-            <div className="row TrainingDetials">
-                <div className="ImageLeft col-6 col-xs-12">
-                    <img className="img-fluid" src="Images/image2.jpg"></img>
-                </div>
-                <div className="CoDet col-6 col-xs-12">
-                    <div className="CoachingDetails">
-                        <div className="CoachingContent">
-                            <h3 className="title">EMINENT STATISTICS</h3>
-                            <p>Coaching for</p>
-                            <p>M.Sc. (Statistics) Entrance</p>
-                            <p>IIT-JAM, HCU, ISI, PUNE, PONDICHERRY, AU, ANU & SVU</p>
-                            <p>MATHEMATICAL SCIENCE : CSIR - UGC NET & AP SET</p>
-                        </div>
-                        
+            <div className="container">
+                <div className="row">
+                    <div className="ImageLeft col-md-6 col-6 col-xs-12">
+                        <img className="img-fluid" src="Images/image2.jpg"></img>
                     </div>
+                    <div className="CoDet col-md-6 col-6 col-xs-12">
+                        <div className="CoachingDetails">
+                            <div className="CoachingContent">
+                                <h3 className="title">EMINENT STATISTICS</h3>
+                                <p>Coaching for</p>
+                                <p>M.Sc. (Statistics) Entrance</p>
+                                <p>IIT-JAM, HCU, ISI, PUNE, PONDICHERRY, AU, ANU & SVU</p>
+                                <p>MATHEMATICAL SCIENCE : CSIR - UGC NET & AP SET</p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
                 </div>
-                
             </div>
 
             <div className="quote">
@@ -40,16 +42,16 @@ export const Home = () => {
             <div>
                 <h3 id="facultytitle">Faculty</h3>
                 <div className="FacultyDetails">
-                    <div className="card no-border facultyCard col-xs-12">
-                        <img className="card-img-top" src="./Images/Alex_smith.jpg"></img>
+                    <div className="card no-border col-xs-12">
+                        <img className="card-img-top" alt="faculty1" src="./Images/Alex_smith.jpg"></img>
                         <div className="card-header">
                             <h4>Alex_smith</h4>
                             <p>Msc Mathematics</p>
                         </div>
                     </div>
 
-                    <div className="card no-border facultyCard col-xs-12">
-                        <img className="card-img-top" src="./Images/Alex_smith.jpg"></img>
+                    <div className="card no-border col-xs-12">
+                        <img className="card-img-top" alt="faculty2" src="./Images/Alex_smith.jpg"></img>
                         <div className="card-header">
                             <h4>Alex_smith</h4>
                             <p>Msc Mathematics</p>
