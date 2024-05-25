@@ -35,7 +35,7 @@ export const Contact = () => {
                             <div>
                             <i className="bi bi-telephone"></i>
                             </div>
-                            <div className="Mail-data">
+                            <div className="Mobile-data">
                                 <a href="tel:=919985544990">+91-9985544990</a>
                             </div>
                         </div>

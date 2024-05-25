@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export const Footer = () =>{
     return (
         <div className="Footer">
@@ -7,18 +9,18 @@ export const Footer = () =>{
                     </div>
                     <div className="col-4 contentlist" >
                         <ul>
-                            <li>Home</li>
-                            <li>Contact</li>
-                            <li>About</li>
+                            <li><Link to="/"><a>Home</a></Link></li>
+                            <li><Link to="/contact"><a>Contact</a></Link></li>
+                            <li><Link to="/about"><a>About</a></Link></li>
                         </ul>
                     </div>
                     <div className="col-4 sociallinks">
                             <h4>Check us Here</h4>
                             <ul>
-                                <li><i class="bi bi-facebook"></i> &nbsp;&nbsp;Facebook</li>
-                                <li><i class="bi bi-instagram"></i> &nbsp;&nbsp;Instagram</li>
-                                <li><i class="bi bi-youtube"></i> &nbsp;&nbsp;Youtube</li>
-                                <li><i class="bi bi-telephone-plus-fill"></i>&nbsp;&nbsp;+91-7272727272</li>
+                                <li><a href="#"><i class="bi bi-facebook"></i> &nbsp;&nbsp;Facebook</a></li>
+                                <li><a href="#"><i class="bi bi-instagram"></i> &nbsp;&nbsp;Instagram</a></li>
+                                <li><a href="#"><i class="bi bi-youtube"></i> &nbsp;&nbsp;Youtube</a></li>
+                                <li><a href="#"><i class="bi bi-telephone-plus-fill"></i>&nbsp;&nbsp;+91-7272727272</a></li>
                             </ul>
                     </div>
                 </div>

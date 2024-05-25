@@ -1,6 +1,16 @@
+import { useState } from "react";
 import { NavLink, Link } from "react-router-dom";
 
 export const Header = () =>{
+
+    const [isOpen,setIsOpen] = useState(false);
+
+    const ToggleHandler = (e) =>{
+            setIsOpen(!isOpen)
+            
+    };
+    console.log(isOpen)
+
     return (
         <div className="Header container-fluid">
                 <nav className="navbar navbar-expand-lg ">
@@ -27,45 +37,27 @@ export const Header = () =>{
                             <li className="nav-item"> 
                                 <NavLink to="/contact" className="nav-link" >Contact</NavLink>
                             </li>
-                            {/* <li className="nav-item ">
-
-                                <div className="dropdown show">
-                                <a href="#" className=" dropdown-toggle" id="dropdownLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    Universities
-                                </a>
-                                <div className="dropdown-menu" aria-labelledby="dropdownLink">
-                                    <a className="dropdown-item" href="#">Central Universities</a>
-                                    <a className="dropdown-item" href="#">IIT</a>
-                                    <a className="dropdown-item" href="#">Pune University</a>
-                                </div>
-                                </div>
-
-                                
-                            </li> */}
-                            <li className="nav-item">
+                            
+                            {/* <li className="nav-item">
                                 <div className="dropdown">
-                                        <a href="#" className="nav-link dropdown-toggle"  data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    Universities
-                                </a>
+                                        <a href="#" className=" dropdown-toggle"  data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Universities
+                                    </a>
                                     <div className="dropdown-menu">
-                                        <div className="dropleft dropdown-item ">
+                                        <div className="dropstart dropdown-item ">
                                             
-                                            <a className="dropleft dropdown-toggle" data-bs-toggle="dropdown" href="#">Central Uniersities</a>
-
-                                                <div className=" dropdown-submenu">
+                                            <a className="dropdown-toggle" data-bs-toggle="dropdown" href="#" onClick={ToggleHandler}>Central Uniersities</a>
+                                                <div className="dropstart dropdown-submenu">
                                                     <div className="dropdown-item">
-                                                       <Link to="/university/university of hyderabad"> <a href="#">Uniersity of Hyderabad</a></Link>
+                                                        <Link to="/university/university of hyderabad"> <a href="#">Uniersity of Hyderabad</a></Link>
                                                     </div>
                                                     <div className="dropdown-item">
-                                                    <Link to="/university/pondicherry university"><a href="#">Pondicherry Uniersity</a></Link>
+                                                        <Link to="/university/pondicherry university"><a href="#">Pondicherry Uniersity</a></Link>
                                                     </div>
                                                     <div className="dropdown-item">
-                                                    <Link to="/university/Banaras hindu University"><a href="#">Banaras Hindu Uniersity</a></Link>
+                                                        <Link to="/university/Banaras hindu University"><a href="#">Banaras Hindu Uniersity</a></Link>
                                                     </div>
                                                 </div>
-                                            
-                                            
-
                                         </div>
                                         <div className="dropdown-item">
                                             <Link to="/university/iit"><a href="#">IIT</a></Link>
@@ -78,7 +70,30 @@ export const Header = () =>{
                                         </div>
                                     </div>
                                 </div>
-                            </li>
+                            </li> */}
+
+
+                    <li className="nav-item "> 
+                    <div className="dropdown">
+                        <a href="#" className="nav-link dropdown-toggle" data-bs-auto-close="outside" data-bs-toggle="dropdown">Universities</a>
+                        <div className="dropdown-menu">
+                            <div className="dropstart"> 
+                                <a href="#" className="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" >Central University</a>
+                                <div className="dropdown-menu" >
+                                    <div className="dropdown-item"><Link to="/university/university of hyderabad"><a href="#" >University of Hyderabad</a></Link></div>
+                                    <div className="dropdown-item"><Link to="/university/pondicherry university"><a href="#" >Pondicherry University</a></Link></div>
+                                    <div className="dropdown-item"><Link to="/university/Banaras hindu University"><a href="#" >Banaras Hindu University</a></Link></div>
+                                </div>
+                            </div>
+                            <div className="dropdown-item"><Link to="/university/iit"><a href="#" >IIT</a></Link></div>
+                            <div className="dropdown-item"><Link to="/university/university of delhi"><a href="#" >University of Delhi</a></Link></div>
+                            <div className="dropdown-item"><Link to="/university/pune university"><a href="#" >Pune University</a></Link></div>
+                        </div>
+                    </div>
+                    </li>
+
+
+
                             <li className="nav-item"> 
                                 <div className="dropdown">
                                     <a href="#" className="nav-link dropdown-toggle" data-bs-toggle="dropdown" >MSC Enetrances</a>

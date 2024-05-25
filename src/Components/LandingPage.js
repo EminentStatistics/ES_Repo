@@ -6,6 +6,7 @@ import { Contact } from "./Contact";
 import { Header } from "./Header";
 import { Footer } from "./Footer";
 import { UniversityPage } from "../UniversityPage";
+import { Header2 } from "./Header2";
  
  export const LandingPage = () => {
     

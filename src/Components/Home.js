@@ -14,7 +14,7 @@ export const Home = () => {
             </div>
 
             <div className="row TrainingDetials">
-                <div className="ImageLeft col-6 col-md-12">
+                <div className="ImageLeft col-6 col-xs-12">
                     <img className="img-fluid" src="Images/image2.jpg"></img>
                 </div>
                 <div className="CoDet col-6 col-xs-12">
@@ -30,6 +30,9 @@ export const Home = () => {
                     </div>
                 </div>
                 
+
+            {/* https://664c2b32a3827c5315c9121b--quiet-rolypoly-d910c9.netlify.app/ */}
+
             </div>
 
             <div className="quote">

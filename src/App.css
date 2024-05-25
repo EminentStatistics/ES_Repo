@@ -19,6 +19,8 @@ nav{
   /* margin: 0; */
   /* border: 2px solid blue; */
   height: 80px;
+  width: 102%;
+  margin-left: -10px;
   /* padding: 10px; */
   background-color: white;
   z-index: 1000;
@@ -62,6 +64,10 @@ nav{
 
 }
 
+.dropdown-submenu{
+  display: block;
+}
+
 
 /* Footer */
 
@@ -91,13 +97,35 @@ nav{
 
   /* border: 1px solid red; */
   /* margin-left: 20px; */
-  padding: 20px;
+  /* padding: 20px; */
+  /* border: 1px solid green; */
 
 }
 
 .contentlist li{
   margin-top: 10px;
   color: white;
+  text-align: center;
+  /* border: 1px solid red; */
+  padding: .5rem;
+  font-size: 20px;
+  font-weight: 600;
+  /* color: yellow !important; */
+}
+
+.contentlist a{
+  color: white;
+}
+
+.contentlist li:hover{
+  background-color: red;
+  border-radius: 10px;
+  
+  /* width: 1rem; */
+}
+
+.contentlist li:hover a{
+  color: yellow;
 }
 
 .sociallinks{
@@ -110,14 +138,15 @@ nav{
   font-size: 18px;
 }
 
-.sociallinks i{
-  margin-top: 10px;
-  color: red;
-}
+
 
 .sociallinks h4{
-  color: red;
-  margin-left: 20px;
+  /* color: yel; */
+  margin-left: 45px;
+}
+
+.sociallinks a{
+  color: white;
 }
 
 .Address{
@@ -169,7 +198,7 @@ nav{
 
 .Homeclass p{
   font-size: 20px;
-  color: aqua;
+  
 }
 
 .Homeclass b{
@@ -219,11 +248,11 @@ a{
   color: black !important;
 }
 
-.nav-link:hover{
+/* .nav-link:hover{
   color: white !important;
   background-color: red;
   border-radius: 10px;
-}
+} */
 
 
 .nav-link.active{
@@ -237,14 +266,10 @@ a{
 
 .dropdown{
   margin-left: -12px;
-  /* width: 80px; */
 }
 
 .dropdown-menu{
-  /* border: 1px solid red !important; */
   background-color: aliceblue !important;
-  /* margin-left: -500px; */
-  /* width: 300px; */
 }
 
  .dropdown-item a{
@@ -269,7 +294,6 @@ a{
   }
 
 
-
 .quote{
   display: flex;
   justify-content: center;
@@ -291,7 +315,7 @@ a{
 #facultytitle{
   /* display: flex; */
   text-align: center;
-  color: green;
+  /* color: green; */
   font-size: 40px;
   font-weight: 700;
   margin-bottom: 30px;
@@ -312,19 +336,19 @@ a{
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  z-index: 10;
+  /* z-index: 10; */
 }
 .card{
   width: 300px;
   /* position: static; */
-  
   margin: 40px;
+  z-index: -1;
   /* border: none; */
 }
 
 .card img{
   border-radius: 20%;
-  z-index: 10;
+  /* z-index: 10; */
 }
 
 .no-border{
@@ -404,13 +428,16 @@ a{
 .ContactDetails{
   /* border: 1px solid red; */
   /* margin-top: 500px; */
+  width: 100%;
   padding-top: 50px;
+  
 }
 
 .AddressDetails{
   display: flex;
   justify-content: space-between;
   margin-top: 30px;
+  /* width: 100%; */
   /* border-radius: 2px solid blue; */
 }
 
@@ -428,10 +455,15 @@ a{
   /* border: 1px solid red; */
   /* margin-bottom: 400px; */
   margin-left: -400px;
+  /* border: 1px solid red; */
 }
 
  .Mail-data{
   margin-top: 20px;
+ }
+
+ iframe{
+  width: 100%;
  }
 
 
@@ -482,7 +514,7 @@ a{
  /* Media queries */
 
  @media screen and (max-width : 576px){
-  ul{
+  nav ul{
     background-color: aliceblue;
     
   }
@@ -493,6 +525,8 @@ a{
 
   .navbar{
     height: 120px;
+    width: 106% !important;
+    margin-left: -12px;
   }
 
   .TrainingDetials{
@@ -527,13 +561,104 @@ a{
   }
 
   .footercontent{
-    width: 100% !important;
+    width: 90% !important;
     padding: 5px !important;
+    margin-left: 25px !important;
     text-align: center;
   }
 
   .contentlist{
     width: 100% !important;
+    /* text-align: left; */
+  }
+
+  .contentlist li{
+    text-align: left;
+  }
+
+  .sociallinks {
+    /* border: 1px solid red; */
+    width: 100% !important;
+  }
+  /* .sociallinks h4,i{
+    font-size: 2rem;
+  } */
+
+  /* .sociallinks li{
+    font-size: 2rem;
+  } */
+  .sociallinks a{
+    color: white;
+  }
+  
+  .Addresstitle{
+    /* border: 1px solid red; */
+    font-size: 1.5rem;
+  }
+
+  /* About */
+
+  .AboutUs{
+    padding: 15px;
+  }
+
+  .ContactContent{
+    padding-top: 40px;
+  }
+
+  .ContactDetails{
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid red; */
+    width: 100% !important;
+  }
+  .AddressDetails{
+    margin-left: -52px;
+    padding: 0;
+    /* border: 1px solid red; */
+    width: 200% !important;
+  }
+
+
+   .AddressDetails a{
+    margin: 0;
+   }
+
+   .AddressDetails .data{
+    /* border: 1px solid red; */
+    /* width: 180% !important; */
+    margin-left: 20px;
+   }
+
+   .Mail-data{
+    margin-left: 20px;
+   }
+
+   .Mobile-data{
+    margin-top: 20px;
+   }
+
+   .Mobile-data a{
+    /* border: 1px solid red; */
+    /* padding-left: -40px; */
+    margin-top: 500px;
+    margin-left: -180px;
+   }
+
+  .ContactDetails iframe{
+    margin-top: 3rem;
+    margin-left: 2rem;
+    width: 190%;
+  }
+
+  .University{
+    margin-top: 140px;
+  }
+
+  .univImage{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
   }
 
  }
